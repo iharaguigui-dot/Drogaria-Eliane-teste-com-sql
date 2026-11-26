@@ -1,0 +1,49 @@
+/* Estilos comuns a todas as páginas: cores, topo, cabeçalho, menu, rodapé, logo e botões */
+:root{
+  --blue:#0b4a9e; --blue-d:#073a80; --blue-l:#dcebff; --blue-ll:#eaf3ff; --bg:#f6f9ff;
+  --text:#0a2a5c; --muted:#5a6f94; --yellow:#ffc928; --white:#fff; --card:#e3efff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --blue:#2f78d6; --blue-d:#1b4f99; --blue-l:#1b2c4a; --blue-ll:#16243d; --bg:#0d1626;
+  --text:#e6efff; --muted:#9fb3d6; --card:#18294a; --white:#fff;}}
+:root[data-theme="dark"]{--blue:#2f78d6; --blue-d:#1b4f99; --blue-l:#1b2c4a; --blue-ll:#16243d; --bg:#0d1626; --text:#e6efff; --muted:#9fb3d6; --card:#18294a;}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+.top{background:var(--blue-d);color:#fff;font-size:13px}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap}
+.top .info{display:flex;gap:22px;flex-wrap:wrap}
+.top .soc{display:flex;gap:14px;font-size:18px}
+header .wrap{display:flex;align-items:center;gap:28px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .circ{width:72px;height:72px;border-radius:50%;background:#fff;border:2px solid var(--blue-l);display:grid;place-items:center;font-weight:800;color:var(--blue);font-size:18px;letter-spacing:-1px;box-shadow:0 2px 8px #0b4a9e22}
+.logo .nm{font-weight:800;color:var(--blue);font-size:44px;line-height:.9;letter-spacing:-2px}
+.logo .nm small{display:block;font-size:14px;letter-spacing:1px;margin-left:34px;font-weight:700}
+.logo .nm small b{color:#e0262b}
+.search{flex:1;min-width:260px;display:flex;align-items:center;background:var(--blue-ll);border:2px solid var(--blue-l);border-radius:40px;padding:5px 6px 5px 18px;gap:10px}
+.search input{flex:1;border:0;background:transparent;font:inherit;font-size:15px;color:var(--text);outline:none;min-width:0}
+.search button{background:var(--blue);color:#fff;border:0;border-radius:30px;padding:12px 28px;font:600 15px 'Poppins',sans-serif;cursor:pointer}
+.acts{display:flex;align-items:center;gap:22px;font-weight:500;font-size:15px}
+.acts .sep{width:1px;height:38px;background:var(--blue-l)}
+.cart{position:relative;display:flex;align-items:center;gap:8px;background:none;border:0;font:inherit;color:inherit;cursor:pointer}
+.cart .n{position:absolute;top:-12px;left:22px;background:var(--blue);color:#fff;font-size:12px;font-weight:600;width:24px;height:24px;border-radius:50%;display:grid;place-items:center}
+nav .bar{background:var(--blue);border-radius:16px;display:flex;align-items:center;gap:38px;padding:0 28px;height:52px;color:#fff;font-weight:500;overflow-x:auto;white-space:nowrap}
+nav .bar a:first-child{font-weight:600;margin-right:40px}
+nav .bar a:hover{text-decoration:underline}
+footer{background:var(--blue-d);color:#fff;text-align:center;padding:22px;font-size:14px}
+.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%) translateY(30px);background:var(--blue-d);color:#fff;padding:12px 22px;border-radius:30px;opacity:0;transition:.25s;pointer-events:none;z-index:9}
+.toast.on{opacity:1;transform:translateX(-50%)}
+@media (max-width:560px){.acts{width:100%;justify-content:space-between}.logo .nm{font-size:34px}}
+.crumb{margin:22px 0 6px;font-size:14px;color:var(--muted)}
+.crumb a{color:var(--blue)}
+.ptitle{font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-1px;color:var(--text)}
+.psub{color:var(--muted);margin:6px 0 20px;font-size:14px}
+.psub a{color:var(--blue);font-weight:600}
+.add,.btn{background:var(--blue);color:#fff;border:0;border-radius:30px;padding:11px 18px;font:600 14px 'Poppins',sans-serif;cursor:pointer;transition:transform .15s}
+.add:hover,.btn:hover{transform:translateY(-2px)}
+.logo .nm small{margin-left:0;display:flex;align-items:center;gap:6px;font-size:15px}
+.logo .nm small b{font-size:22px;line-height:1}
+.btn{display:inline-block;text-align:center}
