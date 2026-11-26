@@ -1,0 +1,11 @@
+/* Reatividade ao passar o mouse (controlada pelo script.js) */
+.tilt{transition:transform .18s ease-out,box-shadow .25s,background-color .25s;transform:perspective(700px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px));will-change:transform;position:relative;overflow:hidden}
+.tilt.is-hover{--ty:-4px;box-shadow:0 10px 22px rgba(11,74,158,.25)}
+.cta,.search button{transition:transform .15s,box-shadow .2s}
+.cta.is-hover,.search button.is-hover{transform:translateY(-2px) scale(1.04);box-shadow:0 6px 14px rgba(11,74,158,.35)}
+.search.is-focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(47,120,214,.2)}
+nav .bar a{position:relative;padding:4px 0}
+nav .bar a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+nav .bar a.is-hover::after{transform:scaleX(1)}
+nav .bar a:hover{text-decoration:none}
+@media (prefers-reduced-motion:reduce){.tilt,.heart,.cta,.search button{transition:none!important;transform:none}.heart{transform:translate(-8%,-50%)}}

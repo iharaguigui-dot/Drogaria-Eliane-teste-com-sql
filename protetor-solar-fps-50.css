@@ -1,0 +1,33 @@
+/* Página do produto: protetor-solar-fps-50 */
+.pdetail{display:grid;grid-template-columns:minmax(260px,1fr) 1.2fr;gap:36px;margin:20px 0 30px;align-items:start}
+.pimg{background:var(--card);border-radius:18px;font-size:min(180px,30vw);display:grid;place-items:center;min-height:340px}
+.pinfo{display:flex;flex-direction:column;gap:14px}
+.tag{align-self:flex-start;background:var(--blue-l);color:var(--text);border-radius:20px;padding:4px 14px;font-size:13px;font-weight:600}
+.pinfo h1{font-size:clamp(26px,3.4vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.1}
+.pprice{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pprice b{font-size:36px;color:var(--blue)}
+.pprice s{color:var(--muted)}
+.off{background:var(--yellow);color:#0a2a6b;border-radius:8px;padding:2px 10px;font-weight:700;font-size:14px}
+.pdesc{color:var(--muted);line-height:1.6}
+.buy{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.qty{display:flex;align-items:center;gap:6px;background:var(--card);border-radius:30px;padding:4px}
+.qty button{background:var(--blue-l);color:var(--text);border:0;border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer}
+.qty span{min-width:34px;text-align:center;font-weight:600}
+.btn.ghost{background:transparent;color:var(--blue);border:2px solid var(--blue);align-self:flex-start}
+.perks{list-style:none;padding:0;display:flex;gap:10px 20px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.pdetails{background:var(--card);border-radius:14px;padding:22px;margin-bottom:30px}
+.pdetails h2,.rel{font-size:22px;font-weight:700;margin-bottom:12px}
+.pdetails table{border-collapse:collapse;width:100%;max-width:480px}
+.pdetails th,.pdetails td{text-align:left;padding:8px 0;border-bottom:1px solid var(--blue-l);font-size:14px}
+.pdetails th{color:var(--muted);font-weight:500;width:140px}
+.warn{margin-top:14px;font-size:13px;color:var(--muted)}
+@media(max-width:800px){.pdetail{grid-template-columns:1fr}.pimg{min-height:220px}}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:10px 0 50px}
+.prod{background:var(--card);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;text-align:center}
+.prod .pic{font-size:64px;background:var(--blue-ll);border-radius:12px;padding:18px 0}
+.prod h3{font-size:15px;font-weight:600;min-height:40px;display:grid;place-items:center}
+.price{font-size:14px;color:var(--muted)}
+.price b{font-size:20px;color:var(--blue);margin-left:4px}
+.price s{opacity:.8}
+.plink{display:flex;flex-direction:column;gap:8px;color:inherit}
+.plink:hover h3{color:var(--blue)}

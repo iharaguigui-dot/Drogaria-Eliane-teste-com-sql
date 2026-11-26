@@ -1,0 +1,11 @@
+/* Página Todas as Categorias */
+.cats{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-top:20px}
+.cats a{background:var(--card);border-radius:14px;padding:18px 8px 14px;text-align:center;font-weight:600;font-size:14px;line-height:1.2;color:var(--blue-d);display:flex;flex-direction:column;align-items:center;gap:8px;min-height:112px;justify-content:center}
+[data-theme="dark"] .cats a{color:var(--text)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cats a{color:var(--text)}}
+.cats a .i{font-size:34px}
+.cats a:hover{outline:2px solid var(--blue)}
+@media (max-width:1000px){.cats{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.cats{grid-template-columns:repeat(2,1fr)}}
+.allcats{grid-template-columns:repeat(4,1fr);margin:20px 0 50px}
+@media(max-width:1000px){.allcats{grid-template-columns:repeat(2,1fr)}}

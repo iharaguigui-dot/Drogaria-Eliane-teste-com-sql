@@ -1,0 +1,16 @@
+/* Página Minha Conta */
+.login{max-width:420px;margin:20px 0 60px;background:var(--card);border-radius:14px;padding:26px}
+.login form{display:flex;flex-direction:column;gap:14px}
+.login label{display:flex;flex-direction:column;gap:6px;font-weight:500;font-size:14px}
+.login input{border:2px solid var(--blue-l);background:var(--bg);color:var(--text);border-radius:10px;padding:12px;font:inherit;outline:none}
+.login input:focus{border-color:var(--blue)}
+[hidden]{display:none!important}
+.msg{font-size:14px;color:#c0262d;min-height:18px}.msg.ok{color:#1b7f3b}
+.sub{font-size:22px;font-weight:700;margin:26px 0 12px}
+#viewConta{margin-bottom:60px}
+#viewConta .btn.ghost{background:transparent;color:var(--blue);border:2px solid var(--blue);margin-top:6px}
+.lista{display:flex;flex-direction:column;gap:10px;max-width:720px}
+.addr,.pedido{background:var(--card);border-radius:12px;padding:14px 16px;font-size:14px;line-height:1.5}
+.pedido ul{margin:8px 0 8px 18px}
+.badge{background:var(--blue-l);color:var(--text);border-radius:12px;padding:2px 10px;font-size:12px;font-weight:600}
+.endform{max-width:420px;margin-top:14px}

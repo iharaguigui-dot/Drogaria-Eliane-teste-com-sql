@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minha Conta - Drogaria Eliane</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="comum.css">
+<link rel="stylesheet" href="Reatividade.css">
+<link rel="stylesheet" href="minha-conta.css">
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <div class="info"><span>📍 Alameda Conde de Porto Alegre 1341 - São Caetano do Sul</span><span>🕒 Seg a Sex: 8:30h às 19h | Sab: 8:30h às 17h</span></div>
+  <div class="soc"><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="WhatsApp">💬</a></div>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="index.html"><div class="nm"><small><b>✚</b>DROGARIA</small>Eliane</div></a>
+  <form class="search">
+    <span>🔍</span><input name="q" placeholder="O que você procura?" aria-label="Buscar produtos"><button>Buscar</button>
+  </form>
+  <div class="acts"><a href="minha-conta.html">👤 Minha Conta</a><span class="sep"></span>
+    <a class="cart" id="cart" href="carrinho.html">🛒 Carrinho <span class="n" id="cn">0</span></a></div>
+</div></header>
+
+<nav><div class="wrap"><div class="bar">
+  <a href="todas-as-categorias.html">☰ Todas as Categorias ⌄</a><a href="medicamentos.html">Medicamentos</a><a href="higiene-e-beleza.html">Higiene e Beleza</a><a href="cuidados-pessoais.html">Cuidados Pessoais</a><a href="vitaminas-e-suplementos.html">Vitaminas e Suplementos</a><a href="ofertas.html">Ofertas</a>
+</div></div></nav>
+<main class="wrap">
+<p class="crumb"><a href="index.html">Início</a> › Minha Conta</p>
+<h1 class="ptitle">👤 Minha Conta</h1><section id="viewLogin" class="login">
+<form id="loginForm">
+<label>E-mail<input type="email" id="lEmail" required placeholder="voce@email.com"></label>
+<label>Senha<input type="password" id="lSenha" required placeholder="••••••••"></label>
+<button class="btn">Entrar</button>
+<p class="psub">Ainda não tem conta? <a href="#" id="showSignup">Criar conta</a></p>
+</form>
+<form id="signupForm" hidden>
+<label>Nome<input type="text" id="sNome" required placeholder="Seu nome"></label>
+<label>E-mail<input type="email" id="sEmail" required placeholder="voce@email.com"></label>
+<label>Senha (mínimo 6 caracteres)<input type="password" id="sSenha" required minlength="6" placeholder="••••••••"></label>
+<button class="btn">Criar conta</button>
+<p class="psub">Já tem conta? <a href="#" id="showLogin">Entrar</a></p>
+</form>
+<p class="msg" id="msg"></p>
+</section>
+<section id="viewConta" hidden>
+<p class="psub" id="olaConta"></p>
+<button class="btn ghost" id="sair">Sair da conta</button>
+<h2 class="sub">Meus endereços</h2>
+<div id="listaEnd" class="lista"></div>
+<form id="endForm" class="login endform">
+<label>CEP<input id="eCep" required maxlength="9" placeholder="00000-000"></label>
+<label>Rua<input id="eRua" required></label>
+<label>Número<input id="eNum" required></label>
+<label>Complemento<input id="eComp"></label>
+<label>Bairro<input id="eBairro" required></label>
+<label>Cidade<input id="eCidade" required></label>
+<label>Estado (UF)<input id="eUf" required maxlength="2" placeholder="SP"></label>
+<button class="btn">Salvar endereço</button>
+<p class="msg" id="msgEnd"></p>
+</form>
+<h2 class="sub">Meus pedidos</h2>
+<div id="listaPed" class="lista"></div>
+</section>
+</main>
+<footer>© 2026 Drogaria Eliane · Alameda Conde de Porto Alegre 1341 - São Caetano do Sul</footer>
+<div class="toast" id="t"></div>
+<script src="Aviso%20temp.js"></script>
+<script src="Carrinho-base.js"></script>
+<script src="Busca.js"></script>
+<script src="Reatividade.js"></script>
+<script src="supabase-config.js"></script>
+<script src="Conta.js"></script>
+<script src="minha-conta.js"></script>
+</body>
+</html>

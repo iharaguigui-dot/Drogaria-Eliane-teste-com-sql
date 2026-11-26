@@ -1,0 +1,10 @@
+/* Página Saúde Bucal: lista de produtos */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:10px 0 50px}
+.prod{background:var(--card);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px;text-align:center}
+.prod .pic{font-size:64px;background:var(--blue-ll);border-radius:12px;padding:18px 0}
+.prod h3{font-size:15px;font-weight:600;min-height:40px;display:grid;place-items:center}
+.price{font-size:14px;color:var(--muted)}
+.price b{font-size:20px;color:var(--blue);margin-left:4px}
+.price s{opacity:.8}
+.plink{display:flex;flex-direction:column;gap:8px;color:inherit}
+.plink:hover h3{color:var(--blue)}
